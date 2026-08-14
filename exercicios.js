@@ -19,7 +19,12 @@
 // Crie 2 variáveis com números e mostre no console
 // o resultado da soma, subtração, multiplicação e divisão.
 // ------------------------------------------------------------
-
+let numero1 = 4
+let numero2 = 5
+console.log("soma: ", numero1 + numero2)
+console.log("subtração: ",  numero1 - numero2 )
+console.log("multiplicação: ", numero1 * numero2)
+console.log("divisão: ", numero1 / numero2)
 
 
 
@@ -28,7 +33,9 @@
 // Converta para Fahrenheit e mostre no console.
 // Fórmula: F = C * 9/5 + 32
 // ------------------------------------------------------------
-
+let celsius = 27;
+let Fahrenheit = celsius * 9/5 + 32
+console.log(celsius + "°C é igual a " + Fahrenheit + "°F");
 
 
 
@@ -38,6 +45,15 @@
 // Dica: use o operador % (resto da divisão)
 // Se numero % 2 === 0, é par.
 // ------------------------------------------------------------
+let numero = 1
+
+if(numero % 2 === 0){
+    console.log("esse numero é par")
+
+}
+else{
+    console.log("esse numero é impar")
+}
 
 
 
@@ -48,7 +64,16 @@
 // Se a média for >= 7, mostre "Aprovado".
 // Se não, mostre "Reprovado".
 // ------------------------------------------------------------
+let thadeu = 6.7;
+let vitoria = 8;
+let rosana = 9.5;
+let media = (thadeu + vitoria + rosana) / 3;
+if(media >= 7)
+    console.log("aprovado!!!")
+else{
+    console.log("reprovado!")
 
+}
 
 
 
@@ -62,7 +87,12 @@
 // Se for >= 18, mostre "Maior de idade".
 // Se não, mostre "Menor de idade".
 // ------------------------------------------------------------
-
+let idade = 15
+if(idade >= 18)
+    console.log("maior de idade")
+else{
+    console.log("menor de idade")
+}
 
 
 
