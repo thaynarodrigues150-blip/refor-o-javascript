@@ -104,10 +104,21 @@ else{
 //   18.5 até 24.9  = "Peso normal"
 //   25 até 29.9    = "Sobrepeso"
 //   30 ou mais     = "Obesidade"
-// ------------------------------------------------------------
+// -------------------------------------------------------
+let peso = 56;
+let altura = 1.53;
 
+let imc = peso / (altura * altura);
 
-
+if (imc < 18.5) {
+    console.log("Abaixo do peso");
+} else if (imc >= 18.5 && imc <= 24.9) {
+    console.log("Peso normal");
+} else if (imc >= 25 && imc <= 29.9) {
+    console.log("Sobrepeso");
+} else {
+    console.log("Obesidade");
+}
 
 // EXERCÍCIO 7 - Pedra, papel e tesoura
 // Crie uma variável com sua jogada ("pedra", "papel" ou "tesoura").
@@ -117,6 +128,26 @@ else{
 //   let computador = opcoes[Math.floor(Math.random() * 3)]
 // Compare as jogadas e mostre quem ganhou.
 // ------------------------------------------------------------
+let usuario = "pedra";
+let opcoes = ['pedra', 'papel', 'tesoura']
+let computador = opcoes[Math.floor(Math.random() * 3)];
+
+console.log("Você jogou: " + usuario);
+console.log("O computador jogou: " + computador);
+
+if (usuario === computador) {
+    console.log("Empate!");
+} 
+else if (
+    (usuario === "pedra" && computador === "tesoura") ||
+    (usuario === "papel" && computador === "pedra") ||
+    (usuario === "tesoura" && computador === "papel")
+) {
+    console.log("Você ganhou!");
+} 
+else {
+    console.log("O computador ganhou!");
+}
 
 
 
@@ -129,7 +160,22 @@ else{
 //   6 e 5    = "C"
 //   4 e 3    = "D"
 //   2, 1, 0  = "F"
-// ------------------------------------------------------------
+// --------------------------------------------
+let nota = 8.5; 
+if (nota >= 9) {
+    console.log("Conceito: A");
+} 
+else if (nota >= 7) {
+    console.log("Conceito: B");
+} 
+else if (nota >= 5) {
+} 
+else if (nota >= 3) {
+} 
+else {
+    console.log("Conceito: F");
+}
+
 
 
 
@@ -148,6 +194,14 @@ else{
 //   ... até "5 x 10 = 50"
 // ------------------------------------------------------------
 
+let numero22 = 5;
+
+for (let i = 1; i <= 10; i++) {
+    
+    let resultado = numero22 * i;
+    console.log(numero22 + " x " + i + " = " + resultado);
+}
+
 
 
 
@@ -156,7 +210,9 @@ else{
 // Mostre cada número no console.
 // No final, mostre "Feliz Ano Novo!" (ou qualquer mensagem).
 // ------------------------------------------------------------
-
+for (let i = 10; i = 0; i --) {
+    console.log("feliz ano novo bbquente!!!")
+}
 
 
 
